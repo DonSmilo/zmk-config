@@ -18,15 +18,15 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  ;  | BKSP |
-// | LWIN |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  I  |  '   |
+// |  TAB |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  ;  |  '   |
+// | LWIN |  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  I  | BKSP |
 // | ESC  |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | ENTR |
-//                    | SHFT| BKSP| CTRL|   | ALT | SPC  | RSE |
-                        bindings = <
-   &kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &kp BSPC
-   &kp LWIN  &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &kp SQT
+//                    | BKSP| CTRL| LSHT|   | SPC | ALT  | RSE |
+                        bindings = <@
+   &kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &kp SQT
+   &kp LWIN  &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &kp BKSP
    &kp ESC   &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &kp ENTER
-                  &kp LSHFT &kp BSPC &kp LCTRL   &kp RALT &kp SPACE &mo 2
+                  &kp BKSP  &kp LCTRL &kp LSHFT  &kp SPACE &kp RALT  &mo 2
                         >;
                 };
                 lower_layer {
@@ -51,8 +51,8 @@
 //                    | LWR |     | CTRL|   | ALT | SPC |     |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp N7  &kp N8 &kp N9 &kp N0 &kp MINUS
-   &kp LWIN &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LBKT      &kp KP_MULTIPLY &kp N4 &kp N5      &kp N6 &kp DOT &kp PLUS
-   &kp ESC  &kp LBKT &kp LPAR &kp RPAR &kp RBRC &kp RBKT      &kp FSLH &kp N1  &kp N2        &kp N3 &kp N0 &kp EQUAL
+   &kp LWIN &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LBRC      &kp KP_MULTIPLY &kp N4 &kp N5      &kp N6 &kp DOT &kp PLUS
+   &kp ESC  &kp LBKT &kp RBKT &kp LPAR &kp RPAR &kp RBRC      &kp FSLH &kp N1  &kp N2        &kp N3 &kp N0 &kp EQUAL
                     	     &tog 1 &trans   &kp LCTRL   &kp RALT  &kp SPACE &trans 
                         >;
                 };
