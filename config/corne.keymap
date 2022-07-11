@@ -24,9 +24,9 @@
 //                    | BKSP| CTRL| LSHT|   | SPC | ALT  | RSE |
                         bindings = <@
    &kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &kp SQT
-   &kp LWIN  &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &kp BKSP
+   &kp LWIN  &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &kp BSPC
    &kp ESC   &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &kp ENTER
-                  &kp BKSP  &kp LCTRL &kp LSHFT  &kp SPACE &kp RALT  &mo 2
+                  &kp BSPC  &kp LCTRL &kp LSHFT  &kp SPACE &kp RALT  &mo 2
                         >;
                 };
                 lower_layer {
