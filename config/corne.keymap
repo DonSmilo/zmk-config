@@ -18,14 +18,14 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  TAB |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  ;  |   '  |
-// | altab|  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  I  | BSPC |
-// | ESC  |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | ENTR |
+// |  BSPC |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U     |  P     |  ;     |  TAB |
+// | altab|  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E     |  O     |  I     | BSPC |
+// | ESC  |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   | , or - | . or ' | / or ! | ENTR |
 //                    | RSE | CTRL| SHFT|   | SPC | LALT | RSE |
                         bindings = <
-   &kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &kp SQT
+   &kp BSPC   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &kp TAB
    &mt LWIN LA(TAB)  &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &kp BSPC
-   &kp ESC   &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &kp ENTER
+   &kp ESC   &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &mt MINUS COMMA &mt SQT DOT &mt EXCL FSLH &kp ENTER
                   &mo 2 &kp LCTRL &kp LSHFT   &kp SPACE &kp LALT &mo 2
                         >;
                 };
