@@ -12,6 +12,17 @@
 #define LOWER   1
 #define RAISE   2
 
+gqt: global-quick-tap {
+    compatible = "zmk,behavior-hold-tap";
+    label = "GLOBAL_QUICK_TAP";
+    #binding-cells = <2>;
+    flavor = "tap-preferred";
+    tapping-term-ms = <200>;
+    quick-tap-ms = <125>;
+    global-quick-tap;
+    bindings = <&kp>, <&kp>;
+};
+
 / {
         keymap {
                 compatible = "zmk,keymap";
@@ -25,7 +36,7 @@
                         bindings = <
    &kp BSPC   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &kp TAB
    &mt LWIN LA(TAB)  &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &kp BSPC
-   &kp ESC   &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &mt MINUS COMMA &mt SQT DOT &mt EXCL FSLH &kp ENTER
+   &kp ESC   &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &gqt MINUS COMMA &gqt SQT DOT &gqt EXCL FSLH &kp ENTER
                   &mo 2 &kp LCTRL &kp LSHFT   &kp SPACE &kp LALT &mo 2
                         >;
                 };
