@@ -21,12 +21,12 @@
 // |  TAB |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U  |  P  |  ;  |   '  |
 // | altab|  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E  |  O  |  I  | BSPC |
 // | ESC  |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   |  ,  |  .  |  /  | ENTR |
-//                    | SHFT| CTRL| SHFT|   | SPC | LALT | RSE |
+//                    | RSE | CTRL| SHFT|   | SPC | LALT | RSE |
                         bindings = <
    &kp TAB   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &kp SQT
    &kp LA(TAB)  &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &kp BSPC
    &kp ESC   &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &kp COMMA &kp DOT &kp FSLH &kp ENTER
-                  &kp LSHFT &kp LCTRL &kp LSHFT   &kp SPACE &kp LALT &mo 2
+                  &mo 2 &kp LCTRL &kp LSHFT   &kp SPACE &kp LALT &mo 2
                         >;
                 };
                 lower_layer {
@@ -34,12 +34,12 @@
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | LWIN | LFT | DWN |  UP | RGT |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
 // | ESC  |  [  |  ]  |  {  |  }  |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | LWR |     | CTRL|   | ALT | SPC |     |
+//                    | LWR |     |     |   |     |     |     |
                         bindings = <
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &kp LWIN &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
-   &kp ESC  &kp LBKT &kp RBKT &kp LBRC &kp RBRC   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
-                    	     &tog 1 &trans   &kp LCTRL   &kp RALT  &kp SPACE &trans 
+   &tog 1  &kp LBKT &kp RBKT &kp LBRC &kp RBRC   &trans      &kp UNDER &kp PLUS  &kp LBRC        &kp RBRC &kp PIPE &kp TILDE
+                    	     &trans &trans   &trans   &trans  &trans &trans  
                         >;
                 };
 
@@ -47,13 +47,13 @@
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  7  |  8  |  9  |  0  |  -   |
 // | LWIN | LFT | DWN |  UP | RGT |  {  |   |  *  |  4  |  5  |  6  |  .  |  +   |
-// | ESC  |  [  |  ]  |  (  |  )  |  }  |   |  /  |  1  |  2  |  3  |  0  |  =   |
-//                    | LWR |     | CTRL|   | ALT | SPC |     |
+// | LYR1 |  [  |  ]  |  (  |  )  |  }  |   |  /  |  1  |  2  |  3  |  0  |  =   |
+//                    | LWR |     |     |   |     |     |     |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp N7  &kp N8 &kp N9 &kp N0 &kp MINUS
    &kp LWIN &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LBRC     &kp KP_MULTIPLY &kp N4 &kp N5      &kp N6 &kp DOT &kp PLUS
-   &kp ESC  &kp LBKT &kp RBKT &kp LPAR &kp RPAR &kp RBRC      &kp FSLH &kp N1  &kp N2        &kp N3 &kp N0 &kp EQUAL
-                    	     &tog 1 &trans   &kp LCTRL   &kp RALT  &kp SPACE &trans 
+   &tog 1  &kp LBKT &kp RBKT &kp LPAR &kp RPAR &kp RBRC      &kp FSLH &kp N1  &kp N2        &kp N3 &kp N0 &kp EQUAL
+                    	    &trans  &trans   &trans   &trans  &trans &trans 
                         >;
                 };
         };
