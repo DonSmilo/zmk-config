@@ -39,7 +39,7 @@
                         bindings = <
    &kp BSPC   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &kp BSPC
    &mt LWIN LA(TAB)  &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &gqt TAB SQT
-   &gqt ESC TAB &gqt LC(BSPC) Z &kp X &kp M &kp C &kp V   &kp K &kp L  &gqt MINUS COMMA &gqt LC(BSPC) DOT &gqt EXCL FSLH &kp ENTER
+   &gqt ESC TAB &kp Z &gqt LC(BSPC) X &kp M &kp C &kp V   &kp K &kp L  &gqt MINUS COMMA &gqt LC(BSPC) DOT &gqt EXCL FSLH &kp ENTER
                   &mo 2 &kp LCTRL &kp LSHFT   &kp SPACE &kp LALT &mo 2
                         >;
                 };
