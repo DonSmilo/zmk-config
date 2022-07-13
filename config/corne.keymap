@@ -32,14 +32,14 @@
 
                 default_layer {
 // -----------------------------------------------------------------------------------------
-// |  BSPC |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U     |  P     |  ;     |  TAB |
-// | altab|  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E     |  O     |  I     | BSPC |
-// | ESC  |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   | , or - | . or ' | / or ! | ENTR |
+// | BSPC |  Q  |  D  |  R  |  W  |  B  |   |  J  |  F   |  U     |  P     |  ;     | BSPC |
+// | altab|  A  |  S  |  H  |  T  |  G  |   |  Y  |  N   |  E     |  O     |  I     | ' or TAB |
+// | TAB or ESC |  Z  |  X  |  M  |  C  |  V  |   |  K  |  L   | , or - | . or ' | / or ! | ENTR |
 //                    | RSE | CTRL| SHFT|   | SPC | LALT | RSE |
                         bindings = <
-   &kp BSPC   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &kp TAB
-   &mt LWIN LA(TAB)  &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &kp BSPC
-   &kp ESC   &kp Z &kp X &kp M &kp C &kp V   &kp K &kp L  &gqt MINUS COMMA &gqt SQT DOT &gqt EXCL FSLH &kp ENTER
+   &kp BSPC   &kp Q &kp D &kp R &kp W &kp B   &kp J &kp F  &kp U     &kp P   &kp SEMI &kp BSPC
+   &mt LWIN LA(TAB)  &kp A &kp S &kp H &kp T &kp G   &kp Y &kp N  &kp E     &kp O   &kp I    &gqt TAB SQT
+   &gqt ESC TAB &gqt LC(BSPC) Z &kp X &kp M &kp C &kp V   &kp K &kp L  &gqt MINUS COMMA &gqt LC(BSPC) DOT &gqt EXCL FSLH &kp ENTER
                   &mo 2 &kp LCTRL &kp LSHFT   &kp SPACE &kp LALT &mo 2
                         >;
                 };
@@ -47,8 +47,8 @@
 // -----------------------------------------------------------------------------------------
 // | BTCLR| BT1 | BT2 | BT3 | BT4 | BT5 |   |  ^  |  &  |  *  |  (  |  )  | BKSP |
 // | LWIN | LFT | DWN |  UP | RGT |     |   |  -  |  =  |  [  |  ]  |  \  |  `   |
-// | ESC  |  [  |  ]  |  {  |  }  |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
-//                    | LWR |     |     |   |     |     |     |
+// | tog 1|  [  |  ]  |  {  |  }  |     |   |  _  |  +  |  {  |  }  | "|" |  ~   |
+//                    |     |     |     |   |     |     |     |
                         bindings = <
    &bt BT_CLR &bt BT_SEL 0 &bt BT_SEL 1 &bt BT_SEL 2 &bt BT_SEL 3 &bt BT_SEL 4   &kp CARET &kp AMPS  &kp KP_MULTIPLY &kp LPAR &kp RPAR &kp BSPC
    &kp LWIN &kp LEFT &kp DOWN &kp UP &kp RIGHT &trans      &kp MINUS &kp EQUAL &kp LBKT        &kp RBKT &kp BSLH &kp GRAVE
@@ -62,7 +62,7 @@
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  7  |  8  |  9  |  0  |  -   |
 // | LWIN | LFT | UP  | DWN | RGT |  {  |   |  *  |  4  |  5  |  6  |  .  |  +   |
 // | LYR1 |  [  |  ]  |  (  |  )  |  }  |   |  /  |  1  |  2  |  3  |  0  |  =   |
-//                    | LWR |     |     |   |     |     |     |
+//                    |     |     |     |   |     |     |     |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp N7  &kp N8 &kp N9 &kp N0 &kp MINUS
    &kp LWIN &kp LEFT &kp UP &kp DOWN &kp RIGHT &kp LBRC     &kp KP_MULTIPLY &kp N4 &kp N5      &kp N6 &kp DOT &kp PLUS
