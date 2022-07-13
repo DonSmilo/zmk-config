@@ -60,12 +60,12 @@
                 raise_layer {
 // -----------------------------------------------------------------------------------------
 // |  TAB |  !  |  @  |  #  |  $  |  %  |   |  ^  |  7  |  8  |  9  |  0  |  -   |
-// | LWIN | LFT | DWN |  UP | RGT |  {  |   |  *  |  4  |  5  |  6  |  .  |  +   |
+// | LWIN | LFT | UP  | DWN | RGT |  {  |   |  *  |  4  |  5  |  6  |  .  |  +   |
 // | LYR1 |  [  |  ]  |  (  |  )  |  }  |   |  /  |  1  |  2  |  3  |  0  |  =   |
 //                    | LWR |     |     |   |     |     |     |
                         bindings = <
    &kp  TAB  &kp EXCL &kp AT &kp HASH &kp DLLR &kp PRCNT   &kp CARET &kp N7  &kp N8 &kp N9 &kp N0 &kp MINUS
-   &kp LWIN &kp LEFT &kp DOWN &kp UP &kp RIGHT &kp LBRC     &kp KP_MULTIPLY &kp N4 &kp N5      &kp N6 &kp DOT &kp PLUS
+   &kp LWIN &kp LEFT &kp UP &kp DOWN &kp RIGHT &kp LBRC     &kp KP_MULTIPLY &kp N4 &kp N5      &kp N6 &kp DOT &kp PLUS
    &tog 1  &kp LBKT &kp RBKT &kp LPAR &kp RPAR &kp RBRC      &kp FSLH &kp N1  &kp N2        &kp N3 &kp N0 &kp EQUAL
                     	    &trans  &trans   &trans   &trans  &trans &trans 
                         >;
